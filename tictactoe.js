@@ -93,10 +93,11 @@ let board = [
         let spot = board[i][j];
         textSize(32);
         let r = w / 4;
-        if (spot == ai) {
+        if (spot == human
+) {
           noFill();
           ellipse(x, y, r * 2);
-        } else if (spot == human) {
+        } else if (spot == ai) {
           line(x - r, y - r, x + r, y + r);
           line(x + r, y - r, x - r, y + r);
         }
